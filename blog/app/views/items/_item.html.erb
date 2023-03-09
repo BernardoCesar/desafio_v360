@@ -1,0 +1,10 @@
+<p>
+  <strong>Item:</strong>
+  <%= item.descricao %>
+</p>
+  <p>
+    <%= link_to "Deletar item", [item.list, item], data: {
+                  turbo_method: :delete,
+                  turbo_confirm: "Tem certeza?"
+                } %>
+  </p>

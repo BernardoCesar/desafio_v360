@@ -1,0 +1,9 @@
+<%= form_with model: [ @list, @list.items.build ] do |form| %>
+  <p>
+    <%= form.label :descricao %><br>
+    <%= form.text_area :descricao %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

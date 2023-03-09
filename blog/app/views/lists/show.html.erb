@@ -1,0 +1,18 @@
+<h1><%= @list.titulo %></h1>
+
+<p><%= @list.projeto %></p>
+
+<ul>
+  <li><%= link_to "Editar", edit_list_path(@list) %></li>
+</ul>
+  <li><%= link_to "Deletar", list_path(@list), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Tem certeza?"
+                  } %></li>
+</ul>
+
+<h2>To do:</h2>
+<%= render @list.items %>
+
+<h2>Adicionar item:</h2>
+<%= render 'items/form' %>
