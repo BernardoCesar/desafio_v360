@@ -1,6 +1,7 @@
 <%= form_with model: list do |form| %>
   <div>
     <%= form.label :titulo %><br>
+
     <%= form.text_field :titulo %>
     <% list.errors.full_messages_for(:titulo).each do |message| %>
       <div><%= message %></div>
@@ -16,6 +17,6 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class:'botao'%>
   </div>
 <% end %>

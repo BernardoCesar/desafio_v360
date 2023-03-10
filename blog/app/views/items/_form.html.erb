@@ -1,9 +1,9 @@
 <%= form_with model: [ @list, @list.items.build ] do |form| %>
   <p>
-    <%= form.label :descricao %><br>
+    <%= form.label 'Adicione um novo item!' %><br>
     <%= form.text_area :descricao %>
   </p>
   <p>
-    <%= form.submit %>
+    <%= form.submit class:'botao' %>
   </p>
 <% end %>

@@ -3,7 +3,7 @@
   <%= item.descricao %>
 </p>
   <p>
-    <%= link_to "Deletar item", [item.list, item], data: {
+    <%= link_to "Excluir", [item.list, item], data: {
                   turbo_method: :delete,
                   turbo_confirm: "Tem certeza?"
                 } %>
