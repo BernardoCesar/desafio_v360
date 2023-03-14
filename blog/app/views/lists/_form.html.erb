@@ -2,7 +2,7 @@
   <div>
     <%= form.label :titulo %><br>
 
-    <%= form.text_field :titulo %>
+    <%= form.text_field :titulo, :autocomplete => 'off'  %>
     <% list.errors.full_messages_for(:titulo).each do |message| %>
       <div><%= message %></div>
     <% end %>

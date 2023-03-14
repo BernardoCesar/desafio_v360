@@ -48,4 +48,12 @@ a:hover{
     border-radius: 8px;
 }
 
+.feito{
+    text-decoration: line-through;
+}
 
+.todo{
+    display: flex;
+    margin-right: 10px;
+    align-content: space-around;
+}

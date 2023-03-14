@@ -1,10 +1,20 @@
-<p>
-  <strong>Item:</strong>
-  <%= item.descricao %>
-</p>
+<div class="todo">
+
+  <strong>Item: </strong>
+  <p id="itemFeito" > <%= item.descricao %>
+  </p>
+
+  <div class="todo">
+   <p>
+    <button type="button" id="feito" class='botao'>Feito!</button>
+  </p>
+
   <p>
-    <%= link_to "Excluir", [item.list, item], data: {
+    <%= button_to "Excluir", [item.list, item], data: {
                   turbo_method: :delete,
                   turbo_confirm: "Tem certeza?"
-                } %>
+    }, :method => :delete, class:'botao' %>
   </p>
+</div>
+
+</div>

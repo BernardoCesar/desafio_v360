@@ -1,6 +1,6 @@
-<h1><%= @list.titulo %></h1>
+<h2><%= @list.titulo %></h2>
 
-<p><%= @list.projeto %></p>
+<h3><%= @list.projeto %></h3>
 
 <ul>
   <li><%= link_to "Editar", edit_list_path(@list) %></li>
@@ -8,11 +8,11 @@
   <li><%= link_to "Excluir", list_path(@list), data: {
                     turbo_method: :delete,
                     turbo_confirm: "Tem certeza?"
-                  } %></li>
+                  }%></li>
 </ul>
 
-<h2>To do:</h2>
-<%= render @list.items %>
+<h3>To do:</h3>
+<%= render @list.items%>
 
-<h2>Adicionar item:</h2>
+<h3>Adicionar item:</h3>
 <%= render 'items/form' %>
